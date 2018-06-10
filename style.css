@@ -25,3 +25,11 @@ footer {
   background-color: beige;
   border: lightblue solid 2px;
 }
+
+#submit {
+  width: 130px;
+  height: 50px;
+  font-size: 18px;
+  border-radius: 5px;
+  background-color: rgb(47, 148, 114);
+}
