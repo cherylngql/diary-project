@@ -1,35 +1,63 @@
+html {
+  width: 100vw;
+}
+
 body {
-  background: linear-gradient(pink,transparent);
+  background: linear-gradient(rgb(57, 89, 151),transparent);
+  width: 100%;
+  margin: 0;
 }
 
 header {
+  height: 50px;
   box-sizing: border-box;
   max-width: 80%;
   color: white;
-  font-size: 40px;
+  font-size: 10px;
+}
+
+
+#journal {
+  width: auto;
+  margin: 0;
+  padding: 0;
+
 }
 
 textarea {
-  width: 80%
-  background-color: lightblue;
+  color: black;
+  width: 70%;
+  height: 70vh;
+  background-image: linear-gradient(transparent, rgba(255, 255, 255, 0.7), transparent), linear-gradient(to right, transparent, rgba(255, 255, 255, 0.7), transparent), url('background.jpg');
+  border: 0;
+  font-size: 18px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   border: none;
-  font-size: 22px;
-  border: lightblue solid 2px;
+  background-size: 100%;
+  padding: 3%;
+  margin: auto;
+  margin: 0 5%;
 }
 
 footer {
-  background-color
 }
 
 :focus {
   background-color: beige;
-  border: lightblue solid 2px;
+  border: 0;
+}
+
+#menu {
+  height: 50px;
+  display: flex;
+  justify-content: center;
 }
 
 #submit {
-  width: 130px;
-  height: 50px;
-  font-size: 18px;
   border-radius: 5px;
   background-color: rgb(47, 148, 114);
+}
+
+button {
+  margin: 10px;
 }
