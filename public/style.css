@@ -15,18 +15,20 @@ body {
 }
 
 section {
-  background: linear-gradient(rgb(57, 89, 151),transparent);
-  display: flex;
+  height: 100vh;
+  background: linear-gradient(transparent,rgb(57, 89, 151));
   padding-top: 30px;
 }
 
-#entry{
-  flex: 6;
+#main {
+  width: 70%;
+  margin: auto;
 }
 
-#overview {
-  flex: 2;
+#entry{
+  width: 800px;
 }
+
 
 header {
   height: 55px;
@@ -68,7 +70,7 @@ h1 {
 textarea {
   color: black;
   width: 50%;
-  height: 80vh;
+  height: 85vh;
   background-image: linear-gradient(transparent, rgba(255, 255, 255, 0.7), transparent), linear-gradient(to right, transparent, rgba(255, 255, 255, 0.7), transparent), url('background.jpg');
   border: 0;
   font-size: 18px;
@@ -77,6 +79,11 @@ textarea {
   background-size: 100% 100%;
   padding: 3%;
   box-shadow: 2px 2px black;
+}
+
+.center {
+  padding-top: 200px;
+  text-align: center;
 }
 
 footer {

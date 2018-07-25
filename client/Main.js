@@ -1,8 +1,9 @@
-import React from 'react'
-import {HashRouter as Router, Route, Switch} from 'react-router-dom'
-import Header from './Header'
-import SingleEntry from './SingleEntry'
+import React from 'react';
+import {HashRouter as Router, Route, Switch} from 'react-router-dom';
+import Header from './Header';
+import SingleEntry from './SingleEntry';
 import AllEntries from './AllEntries';
+import Login from './Login';
 
 const Main = () => {
   return (
@@ -10,14 +11,12 @@ const Main = () => {
       <div>
         <Header />
         <section>
-          <div id="entry">
+          <div id="main">
             <Switch>
-              <Route exact path="/" component={SingleEntry} />
+              <Route exact path="/" component={Login} />
               <Route exact path="/entries" component={AllEntries} />
+              <Route exact path="/entries/add" component={SingleEntry} />
             </Switch>
-          </div>
-          <div id='overview'> 
-            This will be where past entries and different journal collections can be accessed.
           </div>
         </section>
         <footer>

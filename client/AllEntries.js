@@ -11,6 +11,7 @@ class AllEntries extends Component {
 
   render () {
     return (
+      this.props.currentUser.id ?
       <div>
         {this.props.allEntries.length
         ? <div className="">
@@ -24,15 +25,19 @@ class AllEntries extends Component {
         : <div><h1>There are currently no entries.</h1></div>
         }
         <div className="add">
-          <Link to="/"><button type="button">Start Writing</button></Link>
+          <Link to="/entries/add"><button type="button">Start Writing</button></Link>
         </div>
+      </div> :
+      <div>
+        The security of the door to your unbounded world of ideas is taken very seriously. Please <Link to='/'>login</Link>!
       </div>
     )
   }
 }
 
 const mapStateToProps = (state) => ({
-  allEntries: state.allEntries
+  allEntries: state.allEntries,
+  currentUser: state.currentUser
 })
 
 const mapDispatchToProps = (dispatch) => ({

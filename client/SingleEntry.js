@@ -32,8 +32,8 @@ class SingleEntry extends Component {
     return (
       <React.Fragment>
         <div id="journal">
-            <textarea name="leftpage" rows="25" cols="40" placeholder="Today was a great day..." value={this.state.leftpage} onChange={this.handleChange}/>
-            <textarea name="rightpage" rows="25" cols="40" value={this.state.rightpage} onChange={this.handleChange}/>
+            <textarea name="leftpage" rows="25" cols="60" placeholder="Today was a great day..." value={this.state.leftpage} onChange={this.handleChange}/>
+            <textarea name="rightpage" rows="25" cols="60" value={this.state.rightpage} onChange={this.handleChange}/>
         </div>
         <div id="menu">
           <button id='previous'>Previous Page</button>
